@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementet kimike në ushqime</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="kicker">Projekt Kimi | Klasa X-K</p>
+        <h1>Elementet kimike në ushqime</h1>
+      </div>
+      <p class="hero-note">Të dhënat janë për 100 g ushqim dhe përqindjet janë afërsisht.</p>
+    </header>
+
+    <section class="workspace" aria-label="Kërkimi i ushqimeve">
+      <div class="search-panel">
+        <label for="foodSearch">Ushqimi</label>
+        <div class="search-box">
+          <input id="foodSearch" type="search" autocomplete="off" placeholder="Shkruaj p.sh. banane, spinaq, qumësht">
+          <button id="clearSearch" class="icon-button" type="button" aria-label="Pastro kërkimin" title="Pastro">×</button>
+        </div>
+        <div id="suggestions" class="suggestions" aria-live="polite"></div>
+      </div>
+
+      <article id="resultCard" class="result-card" aria-live="polite"></article>
+    </section>
+
+    <section class="food-list" aria-label="Lista e ushqimeve">
+      <div class="section-heading">
+        <h2>Lista e ushqimeve</h2>
+        <span id="foodCount"></span>
+      </div>
+      <div id="foodGrid" class="food-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
